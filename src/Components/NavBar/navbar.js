@@ -15,10 +15,10 @@ const NavBar = () => {
                             <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/About">About</a>
+                            <a className="nav-link" href="/">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Blog">Blog</a>
+                            <a className="nav-link" href="/">Blog</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link disabled" href="#">Disabled</a>
