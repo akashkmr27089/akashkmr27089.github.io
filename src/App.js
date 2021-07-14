@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header/Header'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+
+//Pages
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Blog from './Pages/Blog';
 
 function App() {
   return (
     <>
-      <Header />
-      <div className="App">
-        <header className="App-header">
-          <div className="row">
-            <div className="col-10">
-              Aakash Kumar
-            </div>
-            <div className="col-2">
-              <img src={logo} className="App-logo" alt="logo" />
-            </div>
-          </div>
-        </header>
-      </div >
+      {/* <Home /> */}
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route path="/blog" component={Blog} />
+            <Route component={Error} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </>
   );
 }
