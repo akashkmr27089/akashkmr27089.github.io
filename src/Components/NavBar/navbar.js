@@ -22,7 +22,7 @@ function NavBar() {
                 )
                 };
             </ul>
-            <Button>Sign</Button>
+            <Button id={'SignUpButton'}>Sign</Button>
         </nav >
     );
 }
