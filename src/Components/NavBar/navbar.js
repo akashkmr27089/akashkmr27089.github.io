@@ -3,8 +3,13 @@ import { useState } from 'react';
 import './NavBar.css'
 import { Button } from "../Button.js"
 
-function NavBar() {
+function NavBar({ CompFunc }) {
     const [clicked, clickedFunc] = useState(false);
+
+    const onSelection = (selectedValue) => {
+        CompFunc(selectedValue);
+        clickedFunc(!clicked)
+    }
 
     return (
         <nav className="NavbarItems">
@@ -15,7 +20,7 @@ function NavBar() {
             <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                 {MenuItems.map((item, index) =>
                     <ul key={item.cName + 'ul'} >
-                        <a className={item.cName} href={item.url}>
+                        <a className={item.cName} href={item.url} onClick={() => onSelection(item.title)}>
                             {item.title}
                         </a>
                     </ul>
