@@ -1,18 +1,28 @@
-import logo from '../logo.svg';
 import '../App.css';
-import NavBar from '../Components/NavBar/navbar';
+import { useState } from 'react';
+import { timeout } from 'async';
 
 function Home() {
+
+    //State
+    const [arrayData, setArray] = useState([]);
+
+    //Js Related to This Page 
+    var test = document.getElementById("HomeBox1");
+    if (test != null) test.onmouseover = function (x) { console.log("Mouse Hover", x) }
+
     return (
         <>
-            {/* <Header /> */}
-            <NavBar />
-            <div className="App">
-                <header className="App-header">
-                    Home
-                    <img src={logo} className="App-logo" alt="logo" />
-                </header>
-            </div >
+            <div className="container Home">
+                <div className="row">
+                    <div className="col text BlackBox" id="HomeBox1">Home Box 1</div>
+                    <div className="col text BlackBox2" id="HomeBox2" >Home Box 2</div>
+                </div>
+                <div className="row">
+                    <div className="text col BlackBox" id="HomeBox3"> Head Box 3</div>
+                </div>
+                <div className="text" id="Heading"></div>
+            </div>
         </>
     );
 }

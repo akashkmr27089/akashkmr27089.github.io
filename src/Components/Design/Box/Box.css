@@ -1,0 +1,19 @@
+.BlackBox{
+    background: violet;
+    border-radius: 10px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.BlackBox2{
+    background: rgb(232, 72, 232);
+    border-radius: 10px;
+    height: 200px;
+    margin : 10px;
+    padding: 10px;
+}
+
+.text {
+    color: white;
+}
