@@ -5,11 +5,19 @@ import "./css/Home.css";
 function Home() {
 
     //State
-    const [pohaPos, pohaFunc] = useState(0);
     const [xPos, setX] = useState(0);
     const [yPos, setY] = useState(0);
+    const [mobileXpos, setMobX] = useState(0);
+    const [mobileYpos, setMobY] = useState(0);
+
 
     document.onmousemove = function (x) { setX(x.pageX); setY(x.pageY) }
+    document.addEventListener('touchmove', (x) => {
+        var touches = x.touches[0];
+        // console.log(touches);
+        setMobX(touches.screenX);
+        setMobY(touches.screenY);
+    });
 
     // Js for moving Circles
     var dot = document.querySelector('#dot');
@@ -37,11 +45,11 @@ function Home() {
                     <div className="text col BlackBox" id="HomeBox3"> Head Box 3</div>
                 </div>
                 <div className="row">
-                    <div className="col text BlackBox" id="HomeBox4">Mouse Position X:
-                        <div id="PosX">{xPos}</div>
+                    <div className="col text BlackBox" id="HomeBox4">Swipe Position X:
+                        <div id="PosX">{mobileXpos}</div>
                     </div>
-                    <div className="col text BlackBox2" id="HomeBox5" >Mouse Position Y:
-                        <div id="PosY">{yPos}</div>
+                    <div className="col text BlackBox2" id="HomeBox5" >Swipe Position Y:
+                        <div id="PosY">{mobileYpos}</div>
                     </div>
                 </div>
                 <div className="row">
