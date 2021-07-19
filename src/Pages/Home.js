@@ -5,15 +5,22 @@ import "./css/Home.css";
 function Home() {
 
     //State
-    const [arrayData, setArray] = useState([]);
+    const [pohaPos, pohaFunc] = useState(0);
     const [xPos, setX] = useState(0);
     const [yPos, setY] = useState(0);
 
-    //Js Related to This Page 
-    var test = document.getElementById("HomeBox1");
-    if (test != null) test.onmouseover = function (x) { console.log("Mouse Hover", x) }
-
     document.onmousemove = function (x) { setX(x.pageX); setY(x.pageY) }
+
+    // Js for moving Circles
+    var dot = document.querySelector('#dot');
+    // setInterval()
+    // window.setTimeout(1000, dot.style.)
+    // setInterval(() => {
+    //     { setArray(arrayData.push(2)) };
+    //     console.log(arrayData);
+    // }, 10000)
+
+
 
     return (
         <>
@@ -39,8 +46,13 @@ function Home() {
                 </div>
                 <div className="row">
                     <div className="col text BlackBox3" id="HomeBox6">
-                        <span>HeadsUp</span>
-                        <div id=""></div>
+                        <div className="row" id="NamesHead">Poha</div>
+                        <div className="row" id="MovableBox">
+                            {/* <div id="dot"></div> */}
+                        </div>
+                        <div className="row" id="">
+
+                        </div>
                     </div>
                 </div>
                 <div className="text" id="Heading"></div>
