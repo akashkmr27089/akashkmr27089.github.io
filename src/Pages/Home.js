@@ -15,8 +15,8 @@ function Home() {
     document.addEventListener('touchmove', (x) => {
         var touches = x.touches[0];
         // console.log(touches);
-        setMobX(touches.screenX);
-        setMobY(touches.screenY);
+        setMobX(parseInt(touches.screenX));
+        setMobY(parseInt(touches.screenY));
     });
 
     // Js for moving Circles
