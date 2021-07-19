@@ -48,7 +48,8 @@ function Home() {
                     <div className="col text BlackBox3" id="HomeBox6">
                         <div className="row" id="NamesHead">Poha</div>
                         <div className="row" id="MovableBox">
-                            {/* <div id="dot"></div> */}
+                            <div id="dot"></div>
+                            {/* <div id="dot2"></div> */}
                         </div>
                         <div className="row" id="">
 
