@@ -1,7 +1,53 @@
+#HomeBox1 {
+    background: url('../images/sat_images.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#HomeBox2 {
+    background: url('../images/sat_images.jpg');
+    background-position: top ;
+    background-repeat: no-repeat;
+
+}
+
+#HomeBox3 {
+    background: url('../images/sat_images.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+
+}
+
+#HomeBox4 {
+    background: url('../images/sat_images.jpg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+}
+
+#HomeBox5 {
+    background: url('../images/sat_images.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+
+}
+
+#HomeBox6 {
+    background: url('../images/sat_images.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+
 #PosX {
     font-size: 84px;
 }
 
 #PosY {
-    font-size: 84px;
+    font-size: 84px ;
+}
+
+body {
+    background: #010101;
 }

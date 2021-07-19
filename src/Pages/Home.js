@@ -29,6 +29,20 @@ function Home() {
                 <div className="row">
                     <div className="text col BlackBox" id="HomeBox3"> Head Box 3</div>
                 </div>
+                <div className="row">
+                    <div className="col text BlackBox" id="HomeBox4">Mouse Position X:
+                        <div id="PosX">{xPos}</div>
+                    </div>
+                    <div className="col text BlackBox2" id="HomeBox5" >Mouse Position Y:
+                        <div id="PosY">{yPos}</div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col text BlackBox3" id="HomeBox6">
+                        <span>HeadsUp</span>
+                        <div id=""></div>
+                    </div>
+                </div>
                 <div className="text" id="Heading"></div>
             </div>
         </>

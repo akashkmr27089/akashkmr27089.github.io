@@ -14,6 +14,14 @@
     padding: 10px;
 }
 
+.BlackBox3{
+    background: rgb(232, 72, 232);
+    border-radius: 10px;
+    height: 300px;
+    margin : 10px;
+    padding: 10px;
+}
+
 .text {
     color: white;
 }
