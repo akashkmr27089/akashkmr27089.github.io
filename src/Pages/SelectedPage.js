@@ -9,7 +9,8 @@ function SelectedPage({ selectedComp }) {
     return (
         <>
             {console.log("This is an Page ", { selectedComp })}
-            {selectedComp == "Home" ? <Home /> : <About />}
+            {selectedComp == "Home" ? <Home /> : (selectedComp == "About Me" ? <About /> : <Projects />)}
+
         </>
     );
 }

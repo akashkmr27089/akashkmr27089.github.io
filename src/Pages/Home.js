@@ -14,20 +14,11 @@ function Home() {
     document.onmousemove = function (x) { setX(x.pageX); setY(x.pageY) }
     document.addEventListener('touchmove', (x) => {
         var touches = x.touches[0];
-        // console.log(touches);
         setMobX(parseInt(touches.screenX));
         setMobY(parseInt(touches.screenY));
     });
 
-    // Js for moving Circles
-    var dot = document.querySelector('#dot');
-    // setInterval()
-    // window.setTimeout(1000, dot.style.)
-    // setInterval(() => {
-    //     { setArray(arrayData.push(2)) };
-    //     console.log(arrayData);
-    // }, 10000)
-
+    document.querySelector("body").style.backgroundColor = "#010101";
 
 
     return (

@@ -19,9 +19,6 @@ function App() {
     <>
       <NavBar CompFunc={CompFunc} />
       <SelectedPage selectedComp={selectedComp} />
-      {/* {MenuItems.includes({ selectedComp }) ? <SelectedPage selected={selectedComp} /> : <Home />} */}
-      {selectedComp}
-      {/* <Box /> */}
     </>
   );
 }
