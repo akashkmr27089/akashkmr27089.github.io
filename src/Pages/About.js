@@ -3,6 +3,7 @@ import './css/About.css';
 import myphotos from './images/myPhotos.jpg';
 import AcordianGrid from '../Components/Design/InformationBox/AcordianGrid'
 import { React } from 'react';
+import ContactIcon from '../Components/Design/Contact Me/ContactIcons';
 
 function About() {
     document.querySelector("body").style.backgroundColor = "white";
@@ -17,7 +18,10 @@ function About() {
             <div className="container">
                 <div className="row" id="DataSection">
                     <div className="col" id="ProfileImages">
-                        <img src={myphotos} alt="actual Photos" id="MyPhoto" />
+                        <div className="row">
+                            <img src={myphotos} alt="actual Photos" id="MyPhoto" />
+                        </div>
+                        <ContactIcon />
                     </div>
                     <div className="col" id="ProfileDetails">
                         <h1>I am ...</h1>

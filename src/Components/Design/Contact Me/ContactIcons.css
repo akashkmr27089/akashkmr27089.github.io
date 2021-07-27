@@ -1,0 +1,13 @@
+.fab,.fas{
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#ContactLinks {
+    justify-content: center;
+}
+
+a{
+    color: im !important;
+}
